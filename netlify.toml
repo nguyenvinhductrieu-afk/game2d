@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build:client"
+  publish = "client/dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# The repository root contains the client/server/shared workspaces.
+# Netlify only deploys the Vite client; the Node/Socket.IO server must
+# be hosted separately and exposed through VITE_SERVER_URL.
+
+[dev]
+  command = "npm --workspace client run dev -- --host 0.0.0.0"
+  port = 5173
+  targetPort = 5173

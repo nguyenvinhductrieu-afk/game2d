@@ -1,0 +1,3 @@
+import { AOI_RADIUS, FARM_ORIGIN, FARM_SIZE, FARM_TILE, MOVE_SPEED, WORLD_H, WORLD_W, WORLD_PLAYER_MARGIN } from '@farm-dungeon/shared';
+export { AOI_RADIUS, FARM_ORIGIN, FARM_SIZE, FARM_TILE, MOVE_SPEED, WORLD_H, WORLD_W, WORLD_PLAYER_MARGIN };
+export const SERVER_URL = import.meta.env.VITE_SERVER_URL || window.location.origin;

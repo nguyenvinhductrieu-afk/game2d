@@ -1,0 +1,17 @@
+{
+  "name": "farm-dungeon-client",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "tsc -p tsconfig.json && vite build", "preview": "vite preview" },
+  "dependencies": {
+    "@farm-dungeon/shared": "0.1.0",
+    "phaser": "3.90.0",
+    "socket.io-client": "4.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2",
+    "vite": "^8.1.0"
+  }
+}
